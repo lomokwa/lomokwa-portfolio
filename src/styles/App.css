@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "rct2";
+  src: url("fonts/rct2.ttf") format("truetype");
+}
+
 @tailwind base;
 html {
   scroll-behavior: smooth;
