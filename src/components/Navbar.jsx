@@ -12,11 +12,11 @@ export default function Navbar() {
           <span class="ml-3 text-4xl font-primary">LOMOKWA</span>
         </a>
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-          <button className="inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">Button
+          <a className="inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">Button
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
-          </button>
+          </a>
         </div>
       </div>
     </header>

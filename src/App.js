@@ -9,8 +9,8 @@ function App() {
   return (
    <html className='bg-gray-950'> 
     <Navbar />
-    <Hero />
-    <About />
+    <Hero className="snap-y"/>
+    <About className=""/>
     <ProjectCard />
   </html> 
   );
