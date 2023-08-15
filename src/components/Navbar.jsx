@@ -4,9 +4,7 @@ export default function Navbar() {
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
           <a href="#about" class="mr-5 hover:text-violet-500 hover:cursor-pointer font-primary text-2xl">About Me</a>
-          <a class="mr-5 hover:text-violet-500 hover:cursor-pointer font-primary text-2xl">Second Link</a>
-          <a class="mr-5 hover:text-violet-500 hover:cursor-pointer font-primary text-2xl">Third Link</a>
-          <a class="hover:text-violet-500 hover:cursor-pointer font-primary text-2xl">Fourth Link</a>
+          <a href="#projects" class="mr-5 hover:text-violet-500 hover:cursor-pointer font-primary text-2xl">Projects</a>
         </nav>
         <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-200 lg:items-center lg:justify-center mb-4 md:mb-0">          
           <span class="ml-3 text-4xl font-primary">LOMOKWA</span>

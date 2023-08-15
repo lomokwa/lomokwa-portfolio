@@ -3,16 +3,16 @@ export default function Hero() {
     <>
       <div className="visible carousel w-full h-screen">
         <div id="item1" className="carousel-item w-full h-screen">
-          <img src="../images/collectorscarhub.jpg" className="object-cover w-full" />
+          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full" />
         </div> 
         <div id="item2" className="carousel-item  w-full h-screen">
-          <img src="../images/moviedb.png" className="object-cover w-full" />
+          <img src="../project-thumbnails/moviedb.png" className="object-cover w-full" />
         </div> 
         <div id="item3" className="carousel-item  w-full h-screen">
-          <img src="../images/checkov.png" className="object-cover w-full" />
+          <img src="../project-thumbnails/checkov.png" className="object-cover w-full" />
         </div> 
         <div id="item4" className="carousel-item  w-full h-screen">
-          <img src="../images/collectorscarhub.jpg" className="object-cover w-full" />
+          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full" />
         </div>
       </div>
       <div className="absolute h-screen visible opacity-80 inset-0 z-20 bg-black"></div>
@@ -23,6 +23,7 @@ export default function Hero() {
               <h1 className="mb-5 text-gray-200 text-7xl font-primary"><span className="text-violet-500">HEY,</span> I'M LORENZO</h1>
               <p className="mb-5 text-gray-200 text-4xl font-primary">I'm a full-stack software engineer.</p>
               <a href="#about" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">about me</a>
+              <a href="#projects" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">projects</a>
             </div>
           </div>
         </div>             

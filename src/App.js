@@ -4,14 +4,15 @@ import Hero from "./components/Hero.jsx"
 import ProjectCard from "./components/ProjectCard.jsx"
 import About from './components/About';
 import Navbar from './components/Navbar';
+import PorjectsGrid from './components/ProjectsGrid';
 
 function App() {
   return (
    <html className='bg-gray-950'> 
     <Navbar />
-    <Hero className="snap-y"/>
-    <About className=""/>
-    <ProjectCard />
+    <Hero />
+    <About />
+    <PorjectsGrid />
   </html> 
   );
 }

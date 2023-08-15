@@ -1,41 +1,19 @@
-export default function ProjectCard() {
+export default function ProjectCard({ project }) {
   return(
-    <div id="projects" className="snap-y h-screen border border-red-500">
-      <div className="snap-normal snap-center flex justify-around">
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="../images/collectorscarhub.jpg" alt="Collector's Car Hub thumbnail" /></figure>
-          <div className="card-body">
-            <h2 className="card-title">Collector's Car Hub</h2>
-            <p>A user-curated, car marketplace aggregator.</p>
-            <div className="card-actions justify-end">
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">LIVE</a>
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">REPO</a>
-            </div>
-          </div>
-        </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="../images/checkov.png" alt="Shoes" /></figure>
-          <div className="card-body">
-            <h2 className="card-title">Checkov To-do</h2>
-            <p>A simple to-do application.</p>
-            <div className="card-actions justify-end">
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">LIVE</a>
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">REPO</a>
-            </div>
-          </div>
-        </div>
-        <div className="card w-96 bg-base-100 shadow-xl">
-          <figure><img src="../images/collectorscarhub.jpg" alt="Shoes" /></figure>
-          <div className="card-body">
-            <h2 className="card-title">Collector's Car Hub</h2>
-            <p>A user-curated, car marketplace aggregator.</p>
-            <div className="card-actions justify-end">
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">LIVE</a>
-              <a href="https://collectorscarhub.com" rel="noreferrer" target="blank" className="btn btn-primary">REPO</a>
-            </div>
+      <div className="card w-96 bg-base-100 shadow-xl">   
+        <figure>
+          <a href={project.liveUrl} rel="noreferrer" target="blank">
+            <img src={project.image} alt={project.name + "preview"} />
+          </a>
+        </figure>
+        <div className="card-body">
+          <h2 className="font-primary text-gray-200 text-3xl">{project.name}</h2>
+          <p className="font-primary text-gray-300 text-xl mb-5">{project.description}</p>
+          <div className="card-actions justify-end">
+            <a href={project.liveUrl} rel="noreferrer" target="blank" className="btn btn-primary">LIVE</a>
+            <a href={project.repoUrl} rel="noreferrer" target="blank" className="btn btn-primary">REPO</a>
           </div>
         </div>
       </div>
-    </div> 
   )
 }

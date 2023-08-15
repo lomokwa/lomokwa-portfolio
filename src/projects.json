@@ -1,0 +1,12 @@
+[
+  {
+    "id": 0,
+    "category": "Full-stack",
+    "name": "Collector's Car Hub",
+    "description": "A user curated car marketplace aggregator.",
+    "tech": "MongoDB, Firebase Storage Bucket, Firebase Hosting, Express API",
+    "image": "/project-thumbnails/collectorscarhub.jpg",
+    "liveUrl": "https://collectorscarhub.com",
+    "repoUrl": ""
+  }
+]

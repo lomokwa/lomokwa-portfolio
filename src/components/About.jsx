@@ -17,13 +17,13 @@ export default function About() {
               </svg>
               <p className="text-gray-950 font-primary text-2xl ml-2">LinkedIn</p>
             </a>
-            <a className="inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
+            <a href="/resume.pdf" rel="noreferrer" target="_blank" className="inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
               <svg className="h-6 w-6 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
               </svg>
               <p className="text-gray-950 font-primary text-2xl ml-2">Resume</p>
             </a>
-            <a className="inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
+            <a href="https://www.youtube.com/@lomokwa" rel="noreferrer" target="_blank" className="inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
               <svg className="h-6 w-6 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
               </svg>
               <p className="text-gray-950 font-primary text-2xl ml-2">YouTube</p>
