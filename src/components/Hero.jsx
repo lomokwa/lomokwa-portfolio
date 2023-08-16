@@ -1,6 +1,6 @@
 export default function Hero() {
   return(
-    <>
+    <section className="w-full">
       <div className="visible carousel w-full h-screen">
         <div id="item1" className="carousel-item w-full h-screen">
           <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full brightness-50" />
@@ -15,7 +15,7 @@ export default function Hero() {
           <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full brightness-50" />
         </div>
       </div>
-      <div className="absolute inset-1 z-30 flex justify-start"> 
+      <div className="ml-3.5 sm:ml-0 absolute inset-0 z-30 w-full flex justify-center"> 
         <div className="hero min-h-screen">
           <div className="h-full w-full hero-content text-center text-neutral-content px-20 py-10 rounded-md">
             <div className="max-w-md">
@@ -29,11 +29,11 @@ export default function Hero() {
           </div>
         </div>             
       </div>   
-      <div className="absolute visible bottom-0 flex justify-center w-full py-2 gap-2 z-30">
+      <div className="ml-3.5 sm:ml-0 absolute bottom-0 flex justify-center w-full py-2 gap-2 z-30">
         <a href="#item1" rel="noreferrer" className="btn btn-xs">1</a> 
         <a href="#item2" rel="noreferrer" className="btn btn-xs">2</a> 
         <a href="#item3" rel="noreferrer" className="btn btn-xs">3</a> 
       </div>
-    </>
+    </section>
   )
 }
