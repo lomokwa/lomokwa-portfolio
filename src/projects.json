@@ -4,9 +4,29 @@
     "category": "Full-stack",
     "name": "Collector's Car Hub",
     "description": "A user curated car marketplace aggregator.",
-    "tech": "MongoDB, Firebase Storage Bucket, Firebase Hosting, Express API",
+    "tech": "Nextjs, TailwindCSS, MongoDB, Firebase Storage Bucket, Firebase Hosting, Express API",
     "image": "/project-thumbnails/collectorscarhub.jpg",
     "liveUrl": "https://collectorscarhub.com",
-    "repoUrl": ""
+    "repoUrl": "https://github.com/stars/lomokwa/lists/collector-s-car-hub"
+  },
+  {
+    "id": 1,
+    "category": "Full-stack",
+    "name": "Checkov To-do",
+    "description": "A to-do application.",
+    "tech": "React, TailwindCSS, Firestore, Firebase Hosting, Express API, Expo",
+    "image": "/project-thumbnails/checkov.png",
+    "liveUrl": "https://checkov-lmkw.web.app/",
+    "repoUrl": "https://github.com/stars/lomokwa/lists/checkov-to-do"
+  },
+  {
+    "id": 2,
+    "category": "Front-end",
+    "name": "IMDB Clone",
+    "description": "An IMDB clone using Sample APIs",
+    "tech": "Next.js, TailwindCSS,",
+    "image": "/project-thumbnails/moviedb.png",
+    "liveUrl": "",
+    "repoUrl": "https://github.com/lomokwa/imdb-clone"
   }
 ]

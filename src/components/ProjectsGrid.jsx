@@ -1,11 +1,11 @@
 import ProjectCard from "./ProjectCard"
 import projects from "../projects.json"
 
-export default function PorjectsGrid() {
+export default function ProjectsGrid() {
   return(
-    <section id="projects" class="h-screen border border-red-500 text-gray-600 body-font">
-      <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-wrap -m-4">
+    <section id="projects" class="h-full text-gray-600 body-font bg-gray-950">
+      <div class="container px-5 py-24 mx-auto h-fit">
+        <div class="flex flex-wrap justify-around">
           {
             projects.map(project =>
               <ProjectCard key={project.id} project={project}/>

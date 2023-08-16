@@ -22,8 +22,10 @@ export default function Hero() {
             <div className="max-w-md">
               <h1 className="mb-5 text-gray-200 text-7xl font-primary"><span className="text-violet-500">HEY,</span> I'M LORENZO</h1>
               <p className="mb-5 text-gray-200 text-4xl font-primary">I'm a full-stack software engineer.</p>
-              <a href="#about" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">about me</a>
-              <a href="#projects" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">projects</a>
+                <div className="space-x-5">
+                  <a href="#about" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">about me</a>
+                  <a href="#projects" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">projects</a>
+                </div>
             </div>
           </div>
         </div>             
