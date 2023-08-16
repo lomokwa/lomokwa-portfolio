@@ -3,19 +3,18 @@ export default function Hero() {
     <>
       <div className="visible carousel w-full h-screen">
         <div id="item1" className="carousel-item w-full h-screen">
-          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full" />
+          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full brightness-50" />
         </div> 
         <div id="item2" className="carousel-item  w-full h-screen">
-          <img src="../project-thumbnails/moviedb.png" className="object-cover w-full" />
+          <img src="../project-thumbnails/moviedb.png" className="object-cover w-full brightness-50" />
         </div> 
         <div id="item3" className="carousel-item  w-full h-screen">
-          <img src="../project-thumbnails/checkov.png" className="object-cover w-full" />
+          <img src="../project-thumbnails/checkov.png" className="object-cover w-full brightness-50" />
         </div> 
         <div id="item4" className="carousel-item  w-full h-screen">
-          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full" />
+          <img src="../project-thumbnails/collectorscarhub.jpg" className="object-cover w-full brightness-50" />
         </div>
       </div>
-      <div className="absolute h-screen visible opacity-80 inset-0 z-20 bg-black"></div>
       <div className="absolute inset-1 z-30 flex justify-start"> 
         <div className="hero min-h-screen">
           <div className="h-full w-full hero-content text-center text-neutral-content px-20 py-10 rounded-md">
