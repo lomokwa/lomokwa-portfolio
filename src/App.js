@@ -1,5 +1,5 @@
 import './styles/App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css"
 
 import Hero from "./components/Hero.jsx"
 import About from './components/About';
