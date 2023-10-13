@@ -3,10 +3,10 @@ import projects from "../projects.json"
 
 export default function ProjectsGrid() {
   return(
-    <section id="projects" class="h-fit mt-24 text-gray-600 bg-gray-950">
-      <div class="container px-5 py-24 mx-auto h-fit"> 
-        <h2 className="flex justify-center text-8xl text-violet-500 font-primary">PROJECTS</h2>     
-        <div class="flex flex-wrap justify-around">
+    <section id="projects" className="tw-h-fit tw-mt-24 tw-text-gray-600 tw-bg-gray-950">
+      <div className="tw-container tw-px-5 tw-py-24 tw-mx-auto tw-h-fit"> 
+        <h2 className="tw-flex tw-justify-center tw-text-4xl tw-text-violet-500 tw-font-primary">PROJECTS</h2>     
+        <div className="tw-flex tw-flex-wrap tw-justify-around">
           
           {
             projects.map(project =>

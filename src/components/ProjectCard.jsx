@@ -1,30 +1,30 @@
 export default function ProjectCard({ project }) {
   return(
-      <div className="card w-96 bg-gray-300 shadow-xl my-10">   
+      <div className="tw-card tw-w-96 tw-bg-gray-300 tw-shadow-xl tw-my-10">   
         <figure>
           <a href={project.liveUrl} rel="noreferrer" target="_blank">
             <img src={project.image} alt={project.name + "preview"} />
           </a>
         </figure>
-        <div className="card-body">          
-          <h2 className="font-primary text-violet-500 text-3xl">{project.name}</h2>
-          <p className="font-primary text-gray-800 text-xl">{project.description}</p>
-          <p className="font-primary">● {project.category}</p>
-          <p className="font-primary mb-5">● {project.tech}</p>
-          <div className="card-actions justify-end">
+        <div className="tw-card-body">          
+          <h2 className="tw-font-primary tw-text-violet-500 tw-text-3xl">{project.name}</h2>
+          <p className="tw-font-primary tw-text-gray-800 tw-text-xl">{project.description}</p>
+          <p className="tw-font-primary">● {project.category}</p>
+          <p className="tw-font-primary tw-mb-5">● {project.tech}</p>
+          <div className="tw-card-actions tw-justify-end">
             {
               project.liveUrl.length < 1 
               ? 
-                <a className="text-gray-200 inline-flex items-center bg-gray-500 border-0 py-1 px-3 focus:outline-none rounded mt-4 md:mt-0 font-primary text-2xl">LIVE</a>
+                <button className="tw-text-gray-200 tw-inline-flex tw-items-center tw-bg-gray-500 tw-border-0 tw-py-1 tw-px-3 tw-focus:outline-none tw-rounded tw-mt-4 tw-md:mt-0 tw-font-primary tw-text-2xl">LIVE</button>
               :
-                <a href={project.liveUrl} rel="noreferrer" target="_blank" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">LIVE</a>
+                <a href={project.liveUrl} rel="noreferrer" target="_blank" className="tw-text-gray-200 tw-inline-flex tw-items-center tw-bg-violet-700 tw-border-0 tw-py-1 tw-px-3 tw-focus:outline-none tw-hover:bg-violet-800 tw-rounded tw-mt-4 tw-md:mt-0 tw-font-primary tw-text-2xl">LIVE</a>
             }
             {
               project.repoUrl.length < 1 
               ?
-                <a className="text-gray-200 inline-flex items-center bg-gray-500 border-0 py-1 px-3 focus:outline-none rounded mt-4 md:mt-0 font-primary text-2xl">REPO</a>
+                <button className="tw-text-gray-200 tw-inline-flex tw-items-center tw-bg-gray-500 tw-border-0 tw-py-1 tw-px-3 tw-focus:outline-none tw-rounded tw-mt-4 tw-md:mt-0 tw-font-primary tw-text-2xl">REPO</button>
               :
-                <a href={project.repoUrl} rel="noreferrer" target="_blank" className="text-gray-200 inline-flex items-center bg-violet-700 border-0 py-1 px-3 focus:outline-none hover:bg-violet-800 rounded mt-4 md:mt-0 font-primary text-2xl">REPO</a>
+                <a href={project.repoUrl} rel="noreferrer" target="_blank" className="tw-text-gray-200 tw-inline-flex tw-items-center tw-bg-violet-700 tw-border-0 tw-py-1 tw-px-3 tw-focus:outline-none tw-hover:bg-violet-800 tw-rounded tw-mt-4 tw-md:mt-0 tw-font-primary tw-text-2xl">REPO</a>
             }            
           </div>
         </div>

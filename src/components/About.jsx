@@ -1,39 +1,63 @@
 export default function About() {
   return(
-    <section id="about" className="text-gray-600 body-font bg-gray-950 h-fit">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <img className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="../images/foto-busto.png" />
-        <div className="text-center lg:w-2/3 w-full">
-          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-200 font-primary"><span className="text-violet-500">About me:</span> Lorenzo Mokwa</h2>
-          <p className="overflow-y-scroll h-60 sm:h-full sm:overflow-auto mb-8 leading-relaxed font-primary text-gray-300 text-2xl">Born and raised in Brazil, I moved to the U.S. seven years ago. I've developed a passion for computers from a very young age, which made me find enjoyment in overcoming challenges and discovering the intricacies of computer hardware and software. I've always loved building and taking computers apart. After recently finding the same passion for computer software, and seeing the continuously growing field of software engineering, I decided to pursue it as a career.</p>
+    <section id="about" className="tw-text-gray-600 tw-body-font tw-bg-gray-950 tw-h-fit">
+      <div className="tw-container tw-mx-auto tw-flex tw-px-5 tw-py-24 tw-items-center tw-justify-center tw-flex-col">
+        <img className="tw-w-3/2 md:tw-w-1/2 tw-mb-10 tw-object-cover tw-object-center tw-rounded" alt="hero" src="../images/foto-busto.png" />
+        <div className="tw-text-center tw-lg:w-2/3 tw-w-full">
+          <h2 className="tw-title-font tw-sm:text-4xl tw-text-3xl tw-mb-4 tw-font-medium tw-text-gray-200 tw-font-primary"><span className="tw-text-violet-500">About me:</span> Lorenzo Mokwa</h2>
+          <p className="tw-overflow-y-scroll tw-h-60 tw-sm:h-full sm:tw-overflow-auto tw-mb-8 tw-leading-relaxed tw-font-primary tw-text-gray-300 tw-text-2xl">Born and raised in Brazil, I moved to the U.S. seven years ago. I've developed a passion for computers from a very young age, which made me find enjoyment in overcoming challenges and discovering the intricacies of computer hardware and software. I've always loved building and taking computers apart. After recently finding the same passion for computer software, and seeing the continuously growing field of software engineering, I decided to pursue it as a career.</p>
           
-          <div className="flex flex-wrap justify-center">
-            <a href="https://github.com/lomokwa" rel="noreferrer" target="_blank" className="m-2 w-36 inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
-              <svg class="h-6 w-6 text-gray-900"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 19c-4.286 1.35-4.286-2.55-6-3m12 5v-3.5c0-1 .099-1.405-.5-2 2.791-.3 5.5-1.366 5.5-6.04a4.567 4.567 0 0 0 -1.333 -3.21 4.192 4.192 0 00-.08-3.227s-1.05-.3-3.476 1.267a12.334 12.334 0 0 0 -6.222 0C6.462 2.723 5.413 3.023 5.413 3.023a4.192 4.192 0 0 0 -.08 3.227A4.566 4.566 0 004 9.486c0 4.64 2.709 5.68 5.5 6.014-.591.589-.56 1.183-.5 2V21" />
-              </svg>
-              <p className="text-gray-950 font-primary text-2xl ml-2">GitHub</p>
+          <div className="tw-flex tw-flex-wrap tw-justify-evenly">
+            <a href="https://github.com/lomokwa" rel="noopener noreferrer" target="_blank">
+              <button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                className="tw-w-[100px] tw-mb-2 tw-inline-block tw-rounded tw-px-6 tw-py-2.5 tw-text-xs tw-font-medium tw-uppercase tw-leading-normal tw-text-white tw-shadow-md tw-transition tw-duration-150 tw-ease-in-out tw-hover:shadow-lg tw-focus:shadow-lg tw-focus:outline-none tw-focus:ring-0 tw-active:shadow-lg"
+                style={{backgroundColor: "#333"}}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="tw-h-4 tw-w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                GitHub
+              </button>
             </a>
-            <a href="https://www.linkedin.com/in/lomokwa/" rel="noreferrer" target="_blank" className="m-2 w-36 inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
-              <svg className="h-6 w-6 text-blue-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" />
-              </svg>
-              <p className="text-gray-950 font-primary text-2xl ml-2">LinkedIn</p>
+            <a href="https://www.linkedin.com/in/lomokwa/" rel="noopener noreferrer" target="_blank">
+              <button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                className="tw-w-[100px] tw-mb-2 tw-inline-block tw-rounded tw-px-6 tw-py-2.5 tw-text-xs tw-font-medium tw-uppercase tw-leading-normal tw-text-white tw-shadow-md tw-transition tw-duration-150 tw-ease-in-out tw-hover:shadow-lg tw-focus:shadow-lg tw-focus:outline-none tw-focus:ring-0 tw-active:shadow-lg"
+                style={{backgroundColor: "#0077b5"}}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="tw-h-4 tw-w-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                </svg>
+                LinkedIn
+              </button>
             </a>
-            <a href="/resume.pdf" rel="noreferrer" target="_blank" className="m-2 w-36 inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
-              <svg className="h-6 w-6 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+            <a href="/resume.pdf" rel="noopener noreferrer" target="_blank" className="tw-text-gray-900">
+              <button
+                type="button"
+                data-te-ripple-init
+                data-te-ripple-color="light"
+                className="tw-w-[100px] tw-mb-2 tw-inline-block tw-rounded tw-px-6 tw-py-2.5 tw-text-xs tw-font-medium tw-uppercase tw-leading-normal tw-text-white tw-shadow-md tw-transition tw-duration-150 tw-ease-in-out tw-hover:shadow-lg tw-focus:shadow-lg tw-focus:outline-none tw-focus:ring-0 tw-active:shadow-lg"
+                style={{backgroundColor: "#ffff"}}>
+                <svg className="tw-h-4 tw-w-4" fill="none" viewBox="0 0 24 24" stroke="#000000">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"/>
               </svg>
-              <p className="text-gray-950 font-primary text-2xl ml-2">Resume</p>
+                <span className="tw-text-gray-950">Resume</span>
+              </button>
             </a>
-            <a href="https://www.youtube.com/@lomokwa" rel="noreferrer" target="_blank" className="m-2 w-36 inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">
-              <svg className="h-6 w-6 text-red-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
-              </svg>
-              <p className="text-gray-950 font-primary text-2xl ml-2">YouTube</p>
-            </a>
-            <a href="https://open.spotify.com/user/t6y78ewcse3lp0qllyqus03wt?si=4ced43e76cfd4808" rel="noreferrer" target="_blank" className="m-2 w-36 inline-flex text-white bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 rounded-full text-lg">    
-              <svg className="h-6 w-6 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"> <g> <path fill="none" d="M0 0h24v24H0z"/> <path fill-rule="nonzero" d="M12 2c5.55 0 10 4.5 10 10s-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2zm0 2c-4.395 0-8 3.605-8 8s3.605 8 8 8 8-3.605 8-8c0-4.414-3.573-8-8-8zm3.75 12.65c-2.35-1.45-5.3-1.75-8.8-.95-.35.1-.65-.15-.75-.45-.1-.35.15-.65.45-.75 3.8-.85 7.1-.5 9.7 1.1.35.15.4.55.25.85-.2.3-.55.4-.85.2zm1-2.7c-2.7-1.65-6.8-2.15-9.95-1.15-.4.1-.85-.1-.95-.5-.1-.4.1-.85.5-.95 3.65-1.1 8.15-.55 11.25 1.35.3.15.45.65.2 1s-.7.5-1.05.25zM6.3 9.75c-.5.15-1-.15-1.15-.6-.15-.5.15-1 .6-1.15 3.55-1.05 9.4-.85 13.1 1.35.45.25.6.85.35 1.3-.25.35-.85.5-1.3.25C14.7 9 9.35 8.8 6.3 9.75z"/> </g> 
-              </svg>
-              <p className="text-gray-950 font-primary text-2xl ml-2">Spotify</p>
-            </a>  
           </div>
         </div>
       </div>
