@@ -1,19 +1,17 @@
 export default function Navbar() {
   return(
-    <header className="tw-max-w-screen">
-      <div className="tw-flex tw-justify-between">
-        <nav className="tw-flex tw-justify-between">
-          <a href="#about" className="tw-no-underline">About Me</a>
-          <a href="#projects" className="tw-no-underline">Projects</a>
-        </nav>
-        <a href="/">          
-          <span className="tw-no-underline">LOMOKWA</span>
+    <header className="tw-max-w-screen tw-h-20">
+      <div className="tw-flex tw-justify-around tw-bg-gray-950 tw-font-primary tw-text-3xl">
+        <div className="tw-flex tw-justify-around tw-mt-6">
+          <a href="#about" className="tw-no-underline tw-mr-10 tw-text-violet-500">About Me</a>
+          <a href="#projects" className="tw-no-underline tw-text-violet-500">Projects</a>
+        </div>
+        <a href="/" className="tw-no-underline tw-mt-5">          
+          <span className="tw-text-5xl tw-text-gray-200">LOMOKWA</span>
         </a>
-        <div>
-          <a href="#about" className="tw-no-underline">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="tw-w-4 tw=h-4 tw-ml-1" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
+        <div className="tw-flex">
+          <a href="#about" className="tw-no-underline tw-text-violet-500 tw-mt-6">
+            Learn More
           </a>
         </div>
       </div>

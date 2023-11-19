@@ -7,6 +7,8 @@ import Navbar from './components/Navbar';
 import ProjectsGrid from './components/ProjectsGrid';
 
 // TODO:
+
+// - Migrate to NextJS
 // - Fix navbar on mobile
 // - Add more projects
 // - Add certifications
