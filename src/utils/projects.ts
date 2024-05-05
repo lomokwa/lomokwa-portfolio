@@ -12,9 +12,9 @@ const codingProjects: CodingProject[] = [
   {
     name: "Maid in Florida",
     description: "A website for a cleaning service company.",
-    technologies: ["NextJS", "JavaScript", "TailwindCSS"],
+    technologies: ["NextJS", "JavaScript", "TailwindCSS", "Java", "SpringBoot", "PostgreSQL"],
     liveUrl: "https://maidinfloridaservices.com/",
-    thumbnailPath: "/assets/pictures/project-thumbnails/example.webp",
+    thumbnailPath: "/assets/pictures/project-thumbnails/maidinflorida.jpg",
   },
   {
     name: "Collector's Car Hub",
@@ -35,7 +35,7 @@ const codingProjects: CodingProject[] = [
     name: "This Portfolio!",
     description: "The website you are currently on",
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "SCSS"],
-    repoUrl: "",
+    repoUrl: "https://github.com/lomokwa/lomokwa-portfolio",
     liveUrl: "https://lomokwa.com",
     thumbnailPath: "/assets/pictures/project-thumbnails/portfolio.png"
   },
