@@ -33,7 +33,7 @@ const codingProjects: CodingProject[] = [
   },
   {
     name: "This Portfolio!",
-    description: "The website you are currently on",
+    description: "The website you are currently on.",
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "SCSS"],
     repoUrl: "https://github.com/lomokwa/lomokwa-portfolio",
     liveUrl: "https://lomokwa.com",
