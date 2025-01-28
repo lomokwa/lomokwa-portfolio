@@ -7,7 +7,6 @@ interface CodingProject {
   thumbnailPath: string;
 }
 
-// Define an array of coding projects
 const codingProjects: CodingProject[] = [
   {
     name: "Maid in Florida",
@@ -46,6 +45,20 @@ const codingProjects: CodingProject[] = [
     repoUrl: "https://github.com/lomokwa/chess-system",
     thumbnailPath: "/assets/pictures/project-thumbnails/chess.png"
   },
+  {
+    name: "Spotify Album Display (WIP)",
+    description: "An embeddable album cover art display for Spotify.",
+    technologies: ["Zig"],
+    repoUrl: "https://github.com/lomokwa/spotipi-zig",
+    thumbnailPath: "/assets/pictures/project-thumbnails/spotipi.png"
+  },
+  {
+    name: "Selton Mello Bot (WIP)",
+    description: "An utility bot for my personal Discord server.",
+    technologies: ["NodeJS", "JavaScript", "DiscordJS"],
+    repoUrl: "https://github.com/lomokwa/selton-mello-bot",
+    thumbnailPath: "/assets/pictures/project-thumbnails/seltonmello.png"
+  }
 ];
 
 export default codingProjects;
