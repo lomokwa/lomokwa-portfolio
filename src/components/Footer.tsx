@@ -25,7 +25,10 @@ const Footer: React.FC = () => {
         </div>
         <div>
           <h6 className="footer-title">Contact</h6>
-          <a href='mailto:lomokwa.dev@gmail.com'>lomokwa.dev@gmail.com</a>
+          <div className='flex flex-col'>
+            <a href='mailto:lomokwa.dev@gmail.com'>lomokwa.dev@gmail.com</a>
+            <a href='https://www.linkedin.com/in/lomokwa/'>linkedin.com/in/lomokwa/</a>
+          </div>
         </div>
         <div>
           <h6 className="footer-title">Socials</h6> 

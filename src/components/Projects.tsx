@@ -15,7 +15,7 @@ const Projects
         {
           codingProjects.map((project, index) => (
             <div key={index} className="mx-auto card bg-[#0e1522] shadow-xl w-[320px]">
-              <figure className='h-40'><img className='object-cover' src={project.thumbnailPath} alt={`Screenshot of ${project.name}`}/></figure>
+              <figure className='h-40 object-cover'><img className='object-cover h-[100%] w-[100%]' src={project.thumbnailPath} alt={`Screenshot of ${project.name}`}/></figure>
               <div className="card-body">
                 <h2 className="card-title">{project.name}</h2>
                 <p>{project.description}</p>

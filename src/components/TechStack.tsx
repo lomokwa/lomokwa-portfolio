@@ -16,7 +16,7 @@ const TechStack: React.FC = () => {
       <div className="flex-col justify-center content-center mx-auto text-center p-[16px]">
         <h2 className="text-4xl font-bold text-center">Tech</h2>
         <p>
-          Currently diving deep on Java development, but I have experience
+          Currently learning Java and Zig, but I have experience
           with the following:
         </p>
       </div>
