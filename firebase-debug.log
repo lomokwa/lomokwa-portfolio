@@ -1,0 +1,121 @@
+[debug] [2025-01-28T08:54:36.672Z] ----------------------------------------------------------------------
+[debug] [2025-01-28T08:54:36.673Z] Command:       /home/lomokwa/.nvm/versions/node/v22.13.1/bin/node /home/lomokwa/.nvm/versions/node/v22.13.1/bin/firebase deploy
+[debug] [2025-01-28T08:54:36.674Z] CLI Version:   13.29.2
+[debug] [2025-01-28T08:54:36.674Z] Platform:      linux
+[debug] [2025-01-28T08:54:36.674Z] Node Version:  v22.13.1
+[debug] [2025-01-28T08:54:36.674Z] Time:          Tue Jan 28 2025 03:54:36 GMT-0500 (Eastern Standard Time)
+[debug] [2025-01-28T08:54:36.674Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-28T08:54:36.832Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-28T08:54:36.832Z] > authorizing via signed-in user (lomokwa.dev@gmail.com)
+[debug] [2025-01-28T08:54:36.832Z] [iam] checking project lomokwa-portfolio-new for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-28T08:54:36.833Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:36.833Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:36.834Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions [none]
+[debug] [2025-01-28T08:54:36.834Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions x-goog-quota-user=projects/lomokwa-portfolio-new
+[debug] [2025-01-28T08:54:36.834Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-28T08:54:37.018Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions 200
+[debug] [2025-01-28T08:54:37.019Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-28T08:54:37.019Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:37.019Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:37.019Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new [none]
+[debug] [2025-01-28T08:54:37.331Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new 200
+[debug] [2025-01-28T08:54:37.331Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new {"projectId":"lomokwa-portfolio-new","projectNumber":"372478112187","displayName":"lomokwa-portfolio-new","name":"projects/lomokwa-portfolio-new","resources":{"hostingSite":"lomokwa-portfolio-new"},"state":"ACTIVE","etag":"1_15c58911-388b-46fa-8b5a-5310e2027a9c"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2025-01-28T08:54:40.716Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:40.717Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:54:40.717Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/lomokwa-portfolio-new/sites/lomokwa-portfolio-new [none]
+[debug] [2025-01-28T08:54:41.563Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/lomokwa-portfolio-new/sites/lomokwa-portfolio-new 200
+[debug] [2025-01-28T08:54:41.563Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/lomokwa-portfolio-new/sites/lomokwa-portfolio-new {"name":"projects/lomokwa-portfolio-new/sites/lomokwa-portfolio-new","defaultUrl":"https://lomokwa-portfolio-new.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info] 
+
+[info]    Creating an optimized production build ...
+
+[info] (node:45085) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] (node:45181) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info] 
+
+[info] 🌼   daisyUI 4.9.0
+
+[info] ├─ ✔︎ 1 theme added		https://daisyui.com/docs/themes
+
+[info] ╰─ ❤︎ Support daisyUI project:	https://opencollective.com/daisyui
+
+
+[info] Browserslist: caniuse-lite is outdated. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/components/Footer.tsx
+13:9  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+13:9  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./src/components/Projects.tsx
+18:53  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info] Failed to compile.
+
+
+[info] ./src/components/3dModel.tsx:8:26
+Type error: Binding element 'modelUrl' implicitly has an 'any' type.
+
+   6 | const modelUrl = '/assets/models/steve.glb';
+   7 |
+>  8 | const MinecraftHead = ({ modelUrl }) => {
+     |                          ^
+   9 |   const headRef = useRef();
+  10 |   const { scene } = useGLTF(modelUrl);
+  11 |
+
+[debug] [2025-01-28T08:55:06.347Z] Error: ENOENT: no such file or directory, open '/home/lomokwa/lomokwa-portfolio/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-01-28T08:56:02.947Z] ----------------------------------------------------------------------
+[debug] [2025-01-28T08:56:02.949Z] Command:       /home/lomokwa/.nvm/versions/node/v22.13.1/bin/node /home/lomokwa/.nvm/versions/node/v22.13.1/bin/firebase deploy
+[debug] [2025-01-28T08:56:02.949Z] CLI Version:   13.29.2
+[debug] [2025-01-28T08:56:02.949Z] Platform:      linux
+[debug] [2025-01-28T08:56:02.949Z] Node Version:  v22.13.1
+[debug] [2025-01-28T08:56:02.950Z] Time:          Tue Jan 28 2025 03:56:02 GMT-0500 (Eastern Standard Time)
+[debug] [2025-01-28T08:56:02.950Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-28T08:56:03.099Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-28T08:56:03.099Z] > authorizing via signed-in user (lomokwa.dev@gmail.com)
+[debug] [2025-01-28T08:56:03.100Z] [iam] checking project lomokwa-portfolio-new for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-28T08:56:03.100Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:56:03.100Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:56:03.101Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions [none]
+[debug] [2025-01-28T08:56:03.101Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions x-goog-quota-user=projects/lomokwa-portfolio-new
+[debug] [2025-01-28T08:56:03.101Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-28T08:56:03.374Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions 200
+[debug] [2025-01-28T08:56:03.374Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/lomokwa-portfolio-new:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-28T08:56:03.374Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:56:03.375Z] Checked if tokens are valid: true, expires at: 1738057793930
+[debug] [2025-01-28T08:56:03.375Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new [none]
+[debug] [2025-01-28T08:56:03.689Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new 200
+[debug] [2025-01-28T08:56:03.689Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/lomokwa-portfolio-new {"projectId":"lomokwa-portfolio-new","projectNumber":"372478112187","displayName":"lomokwa-portfolio-new","name":"projects/lomokwa-portfolio-new","resources":{"hostingSite":"lomokwa-portfolio-new"},"state":"ACTIVE","etag":"1_15c58911-388b-46fa-8b5a-5310e2027a9c"}

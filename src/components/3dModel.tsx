@@ -5,13 +5,13 @@ import { useFrame } from '@react-three/fiber';
 
 const modelUrl = '/assets/models/steve.glb';
 
-const MinecraftHead = ({ modelUrl }) => {
+const MinecraftHead = () => {
   const headRef = useRef();
   const { scene } = useGLTF(modelUrl);
 
   useFrame(() => {
     if (headRef.current) {
-      // Rotate the head around the Y axis
+      //@ts-ignore
       headRef.current.rotation.y += 0.008;
     }
   });
@@ -34,7 +34,7 @@ const modelViewer = () => {
       >
         <ambientLight intensity={0.5} />
         <directionalLight position={[0, 0, 5]} intensity={1} />
-        <MinecraftHead modelUrl={modelUrl} />
+        <MinecraftHead />
       </Canvas>
     </div>
   );
