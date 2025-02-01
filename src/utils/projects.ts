@@ -10,8 +10,8 @@ interface CodingProject {
 const codingProjects: CodingProject[] = [
   {
     name: "Maid in Florida",
-    description: "A website for a cleaning service company.",
-    technologies: ["NextJS", "JavaScript", "TailwindCSS", "Java", "SpringBoot", "PostgreSQL"],
+    description: "A client website for a cleaning service company.",
+    technologies: ["NextJS", "TypeScript", "TailwindCSS", "NodeJS", "ExpressJS", "Github Actions", "GCP"],
     liveUrl: "https://maidinfloridaservices.com/",
     thumbnailPath: "/assets/pictures/project-thumbnails/maidinflorida.jpg",
   },
