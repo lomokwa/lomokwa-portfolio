@@ -1,7 +1,6 @@
 const descriptions: string[] = [
   "Full Stack Developer",
   "Software Engineer",
-  "CS Undergrad",
   "Car Enthusiast",
   "Techie",
   "Gamer",
