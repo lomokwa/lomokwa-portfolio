@@ -19,7 +19,6 @@ const Footer: React.FC = () => {
           <div className='flex flex-col'>
             <a href="#tech" rel='noopener noreferrer'>Tech</a>
             <a href="#projects" rel='noopener noreferrer'>Projects</a>
-            <a href="#about" rel='noopener noreferrer'>About</a>
             <a href='/docs/mokwa-lorenzo-resume.pdf' rel='noopener noreferrer' target='_blank'>Resumé</a>
           </div>
         </div>
