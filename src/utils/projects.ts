@@ -16,21 +16,6 @@ const codingProjects: CodingProject[] = [
     thumbnailPath: "/assets/pictures/project-thumbnails/maidinflorida.jpg",
   },
   {
-    name: "Collector's Car Hub",
-    description: "An user-curated marketplace aggregator.",
-    technologies: ["NextJS", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS", "NodeJS", "Firebase"],
-    repoUrl: "https://github.com/lomokwa/car-marketplace-web",
-    liveUrl: "https://collectorscarhub.com/",
-    thumbnailPath: "/assets/pictures/project-thumbnails/collectorscarhub.jpg",
-  },
-  {
-    name: "Checkov Todo",
-    description: "A fullstack todo application.",
-    technologies: ["React", "JavaScript", "Firebase", "ReactNative"],
-    repoUrl: "https://github.com/lomokwa/checkov-web",
-    thumbnailPath: "/assets/pictures/project-thumbnails/checkov.png"
-  },
-  {
     name: "This Portfolio!",
     description: "The website you are currently on.",
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "SCSS"],
@@ -58,7 +43,22 @@ const codingProjects: CodingProject[] = [
     technologies: ["NodeJS", "JavaScript", "DiscordJS"],
     repoUrl: "https://github.com/lomokwa/selton-mello-bot",
     thumbnailPath: "/assets/pictures/project-thumbnails/seltonmello.png"
-  }
+  },
+  {
+    name: "Collector's Car Hub",
+    description: "An user-curated marketplace aggregator.",
+    technologies: ["NextJS", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS", "NodeJS", "Firebase"],
+    repoUrl: "https://github.com/lomokwa/car-marketplace-web",
+    liveUrl: "https://collectorscarhub.com/",
+    thumbnailPath: "/assets/pictures/project-thumbnails/collectorscarhub.jpg",
+  },
+  {
+    name: "Checkov Todo",
+    description: "A fullstack todo application.",
+    technologies: ["React", "JavaScript", "Firebase", "ReactNative"],
+    repoUrl: "https://github.com/lomokwa/checkov-web",
+    thumbnailPath: "/assets/pictures/project-thumbnails/checkov.png"
+  },
 ];
 
 export default codingProjects;
