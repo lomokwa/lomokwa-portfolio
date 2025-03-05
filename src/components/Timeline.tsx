@@ -104,7 +104,7 @@ const Timeline: React.FC = () => {
           </div>
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">Jun 2024 – Sep 2024</time>
-            <div className="text-lg font-black">Site Impact – Jr. Software Developer</div>
+            <div className="text-lg font-black">Site Impact – Software Engineer</div>
             Collaborated on the development of a B2B marketing application for managing and placing marketing campaigns. Implemented custom integrations with services like Facebook and Google, and contributed to in-house library development.
           </div>
           <hr />
@@ -125,7 +125,7 @@ const Timeline: React.FC = () => {
           </div>
           <div className="timeline-end md:mb-10">
             <time className="font-mono italic">Dec 2023 – Present</time>
-            <div className="text-lg font-black">Insite Web – Jr. Software Developer</div>
+            <div className="text-lg font-black">Insite Web – Software Engineer</div>
             Currently leading the development of client-facing applications, optimizing UI/UX integration, and collaborating with stakeholders to ensure the successful delivery of software solutions.
           </div>
         </li>
