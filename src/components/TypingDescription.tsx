@@ -1,5 +1,3 @@
-// components/TypingDescription.tsx
-
 import React, { useState, useEffect } from 'react';
 import descriptions from '@/utils/descriptions';
 
