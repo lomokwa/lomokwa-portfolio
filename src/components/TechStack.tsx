@@ -16,18 +16,18 @@ const TechStack: React.FC = () => {
       <div className="flex-col justify-center content-center mx-auto text-center p-[16px]">
         <h2 className="text-4xl font-bold text-center">Tech</h2>
         <p>
-          Currently learning Java and Zig, but I have experience
+          I focus on TypeScript and JavaScript develpment. I'm currently learning Go and have experience
           with the following:
         </p>
       </div>
       <div className="flex justify-around flex-wrap max-w-2xl mx-auto">
         <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>Java</p>
-          <FontAwesomeIcon icon={faJava} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
           <p>JavaScript</p>
           <FontAwesomeIcon icon={faJs} size="5x" />
+        </div>
+        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
+          <p>Java</p>
+          <FontAwesomeIcon icon={faJava} size="5x" />
         </div>
         <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
           <p>HTML5</p>
@@ -54,6 +54,12 @@ const TechStack: React.FC = () => {
           <FontAwesomeIcon icon={faGit} size="5x" />
         </div>
       </div>
+      <div className="flex-col justify-center content-center mx-auto text-center p-[16px] mt-5">
+        <p className="text-xl">
+          And more!
+        </p>
+      </div>
+      
     </div>
   );
 };
