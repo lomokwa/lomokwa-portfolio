@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import descriptions from '@/utils/descriptions';
 
 const TypingDescription: React.FC = () => {
@@ -6,37 +6,45 @@ const TypingDescription: React.FC = () => {
   const [currentText, setCurrentText] = useState<string>('');
   const [showUnderline, setShowUnderline] = useState<boolean>(false);
   const [typingDirection, setTypingDirection] = useState<'typing' | 'deleting'>('typing');
+  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const description = descriptions[currentDescriptionIndex];
-      if (typingDirection === 'typing') {
-        if (currentText.length === description.length) {
-          setTimeout(() => {
-            setTypingDirection('deleting');
-          }, 2000); // Delay before deleting text
-        } else {
-          setCurrentText((prevText) => description.substring(0, prevText.length + 1));
-        }
+    const description = descriptions[currentDescriptionIndex];
+    
+    if (typingDirection === 'typing') {
+      if (currentText.length < description.length) {
+        timeoutRef.current = setTimeout(() => {
+          setCurrentText(description.substring(0, currentText.length + 1));
+        }, 100);
       } else {
-        if (currentText === '') {
-          setTypingDirection('typing');
-          setCurrentDescriptionIndex((prevIndex) =>
-            (prevIndex + 1) % descriptions.length
-          );
-        } else {
-          setCurrentText((prevText) => prevText.substring(0, prevText.length - 1));
-        }
+        timeoutRef.current = setTimeout(() => {
+          setTypingDirection('deleting');
+        }, 2000);
       }
-    }, 100); // Typing speed
+    } else {
+      if (currentText.length > 0) {
+        timeoutRef.current = setTimeout(() => {
+          setCurrentText(currentText.substring(0, currentText.length - 1));
+        }, 50);
+      } else {
+        setTypingDirection('typing');
+        setCurrentDescriptionIndex((prevIndex) =>
+          (prevIndex + 1) % descriptions.length
+        );
+      }
+    }
 
-    return () => clearInterval(interval);
-  }, [currentDescriptionIndex, currentText, typingDirection]);
+    return () => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [currentText, typingDirection, currentDescriptionIndex]);
 
   useEffect(() => {
     const underlineInterval = setInterval(() => {
       setShowUnderline((prevValue) => !prevValue);
-    }, 500); // Flashing speed
+    }, 500);
 
     return () => clearInterval(underlineInterval);
   }, []);

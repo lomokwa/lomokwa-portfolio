@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import TypingDescription from './TypingDescription';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -9,7 +8,7 @@ const Hero: React.FC = () => {
   return (
     <div className="hero min-h-screen md:min-h-dvh bg-gray-950">
       <div className="hero-content flex-col lg:flex-row">
-        {/* <Image src="/assets/pictures/pixel-art.webp" width={700} height={700} alt="Pixel art of Lorenzo Mokwa" /> */}
+        {/* <img src="/assets/pictures/pixel-art.webp" width={700} height={700} alt="Pixel art of Lorenzo Mokwa" /> */}
         <ModelViewer />
         <div>
           <h1 className="text-5xl font-bold">Hey, I&apos;m Lorenzo!</h1>
