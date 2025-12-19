@@ -16,7 +16,7 @@ const TechStack: React.FC = () => {
       <div className="flex-col justify-center content-center mx-auto text-center p-[16px]">
         <h2 className="text-4xl font-bold text-center">Tech</h2>
         <p>
-          I focus on TypeScript and JavaScript develpment. I'm currently learning Go and have experience
+          I focus on TypeScript and JavaScript development. I'm currently learning Go and have experience
           with the following:
         </p>
       </div>
