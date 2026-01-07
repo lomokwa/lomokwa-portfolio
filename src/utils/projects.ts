@@ -18,7 +18,7 @@ const codingProjects: CodingProject[] = [
   {
     name: "This Portfolio!",
     description: "The website you are currently on.",
-    technologies: ["NextJS", "TypeScript", "TailwindCSS", "SCSS"],
+    technologies: ["Vite", "React", "TypeScript", "TailwindCSS", "SCSS"],
     repoUrl: "https://github.com/lomokwa/lomokwa-portfolio",
     liveUrl: "https://lomokwa.com",
     thumbnailPath: "/assets/pictures/project-thumbnails/portfolio.png"
@@ -49,7 +49,6 @@ const codingProjects: CodingProject[] = [
     description: "An user-curated marketplace aggregator.",
     technologies: ["NextJS", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS", "NodeJS", "Firebase"],
     repoUrl: "https://github.com/lomokwa/car-marketplace-web",
-    liveUrl: "https://collectorscarhub.com/",
     thumbnailPath: "/assets/pictures/project-thumbnails/collectorscarhub.jpg",
   },
   {
