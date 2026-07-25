@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import codingProjects from '@/utils/projects';
 
 const Projects
@@ -11,6 +12,7 @@ const Projects
           Some of the projects I have worked / been working on recently!
         </p>
       </div>
+
       <div className="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl lg:max-w-5xl mx-auto ">
         {
           codingProjects.map((project, index) => (
@@ -32,8 +34,9 @@ const Projects
                       <a href={project.liveUrl} rel='noreferrer noopener' target='_blank' className="btn bg-[#6441a5] text-white hover:bg-[#47316e]">Live</a>
                   }
                   {
-                    project?.repoUrl && 
-                      <a href={project.repoUrl} rel='noreferrer noopener' target='_blank' className="btn bg-[#6441a5] text-white hover:bg-[#47316e]">Repo</a>
+                    project?.repos?.map((repo, repoIndex) => (
+                      <a key={repoIndex} href={repo.url} rel='noreferrer noopener' target='_blank' className="btn bg-[#6441a5] text-white hover:bg-[#47316e]">{repo.label}</a>
+                    ))
                   }
                 </div>
               </div>

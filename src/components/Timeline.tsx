@@ -2,9 +2,9 @@ import React from "react";
 
 const Timeline: React.FC = () => {
   return (
-    <div id="experience" className="mx-auto max-w-[1024px]">
+    <div id="experience" className="mx-auto max-w-[1024px] p-[16px]">
       <h2 className="text-4xl font-bold text-center mt-20">Experience</h2>
-      <ul className="mt-5 mx-20 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+      <ul className="mt-5 mx-0 md:mx-20 timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
         <li>
           <div className="timeline-middle">
             <svg

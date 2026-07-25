@@ -17,8 +17,8 @@ const Footer: React.FC = () => {
         <div>
           <h6 className="footer-title text-white">Links</h6>
           <div className='flex flex-col'>
-            <a href="#tech" rel='noopener noreferrer'>Tech</a>
-            <a href="#projects" rel='noopener noreferrer'>Projects</a>
+            <a href="/#tech" rel='noopener noreferrer'>Tech</a>
+            <a href="/#projects" rel='noopener noreferrer'>Projects</a>
             <a href='/docs/mokwa-lorenzo-resume.pdf' rel='noopener noreferrer' target='_blank'>Resumé</a>
           </div>
         </div>
