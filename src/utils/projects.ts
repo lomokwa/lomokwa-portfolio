@@ -14,6 +14,8 @@ export interface CodingProject {
   liveUrl?: string;
   thumbnailPath: string;
   featured?: boolean;
+  /** Relative visual weight in the bento-style Projects grid. Defaults to "sm". */
+  size?: "sm" | "md" | "lg";
 }
 
 const codingProjects: CodingProject[] = [
@@ -74,6 +76,7 @@ MC Manager doesn't just serve the web dashboard, either — its console and play
     ],
     thumbnailPath: "/assets/pictures/project-thumbnails/mcmanager.png",
     featured: true,
+    size: "lg",
   },
   {
     slug: "selton-mello-bot",
@@ -126,6 +129,7 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     ],
     thumbnailPath: "/assets/pictures/project-thumbnails/seltonmello.png",
     featured: true,
+    size: "lg",
   },
   {
     slug: "maid-in-florida",
@@ -134,6 +138,7 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     technologies: ["NextJS", "TypeScript", "TailwindCSS", "NodeJS", "ExpressJS", "Github Actions", "GCP"],
     liveUrl: "https://maidinfloridaservices.com/",
     thumbnailPath: "/assets/pictures/project-thumbnails/maidinflorida.jpg",
+    size: "md",
   },
   {
     slug: "portfolio",
@@ -142,7 +147,8 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     technologies: ["Vite", "React", "TypeScript", "TailwindCSS", "SCSS"],
     repos: [{ label: "Repo", url: "https://github.com/lomokwa/lomokwa-portfolio" }],
     liveUrl: "https://lomokwa.com",
-    thumbnailPath: "/assets/pictures/project-thumbnails/portfolio.png"
+    thumbnailPath: "/assets/pictures/project-thumbnails/portfolio.png",
+    size: "md",
   },
   {
     slug: "chess-cli-game",
@@ -150,7 +156,8 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     description: "A chess game in the terminal.",
     technologies: ["Java"],
     repos: [{ label: "Repo", url: "https://github.com/lomokwa/chess-system" }],
-    thumbnailPath: "/assets/pictures/project-thumbnails/chess.png"
+    thumbnailPath: "/assets/pictures/project-thumbnails/chess.png",
+    size: "sm",
   },
   {
     slug: "collectors-car-hub",
@@ -159,6 +166,7 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     technologies: ["NextJS", "JavaScript", "TailwindCSS", "MongoDB", "ExpressJS", "NodeJS", "Firebase"],
     repos: [{ label: "Repo", url: "https://github.com/lomokwa/car-marketplace-web" }],
     thumbnailPath: "/assets/pictures/project-thumbnails/collectorscarhub.jpg",
+    size: "sm",
   },
   {
     slug: "checkov-todo",
@@ -166,7 +174,8 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     description: "A fullstack todo application.",
     technologies: ["React", "JavaScript", "Firebase", "ReactNative"],
     repos: [{ label: "Repo", url: "https://github.com/lomokwa/checkov-web" }],
-    thumbnailPath: "/assets/pictures/project-thumbnails/checkov.png"
+    thumbnailPath: "/assets/pictures/project-thumbnails/checkov.png",
+    size: "sm",
   },
 ];
 

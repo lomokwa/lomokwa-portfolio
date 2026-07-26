@@ -18,6 +18,9 @@ import {
   SiSqlite,
   SiExpress,
   SiGithubactions,
+  SiNestjs,
+  SiMongodb,
+  SiPostgresql
 } from "react-icons/si";
 
 interface Tech {
@@ -34,8 +37,8 @@ const siIcon = (Icon: IconType) => <Icon size={22} />;
 const techs: Tech[] = [
   { name: "TypeScript", icon: siIcon(SiTypescript) },
   { name: "JavaScript", icon: faIcon(faJs) },
-  { name: "Java", icon: faIcon(faJava) },
   { name: "Go", icon: siIcon(SiGo) },
+  { name: "Java", icon: faIcon(faJava) },
   { name: "HTML5", icon: faIcon(faHtml5) },
   { name: "CSS3", icon: faIcon(faCss3) },
   { name: "TailwindCSS", icon: siIcon(SiTailwindcss) },
@@ -43,7 +46,10 @@ const techs: Tech[] = [
   { name: "Vite", icon: siIcon(SiVite) },
   { name: "Node.js", icon: faIcon(faNodeJs) },
   { name: "Express", icon: siIcon(SiExpress) },
+  { name: "NestJS", icon: siIcon(SiNestjs) },
   { name: "SQLite", icon: siIcon(SiSqlite) },
+  { name: "PostgreSQL", icon: siIcon(SiPostgresql) },
+  { name: "MongoDB", icon: siIcon(SiMongodb) },
   { name: "Docker", icon: faIcon(faDocker) },
   { name: "Git", icon: faIcon(faGit) },
   { name: "GitHub Actions", icon: siIcon(SiGithubactions) },
