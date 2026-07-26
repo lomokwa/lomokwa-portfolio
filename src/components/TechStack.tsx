@@ -10,56 +10,45 @@ import {
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
 
+const techs = [
+  { name: "JavaScript", icon: faJs },
+  { name: "Java", icon: faJava },
+  { name: "HTML5", icon: faHtml5 },
+  { name: "CSS3", icon: faCss3 },
+  { name: "React", icon: faReact },
+  { name: "Node.js", icon: faNodeJs },
+  { name: "Docker", icon: faDocker },
+  { name: "Git", icon: faGit },
+];
+
 const TechStack: React.FC = () => {
   return (
-    <div id="tech">
-      <div className="flex-col justify-center content-center mx-auto text-center p-[16px]">
+    <div id="tech" className="mt-20 max-w-4xl mx-auto p-[16px]">
+      <div className="flex-col justify-center content-center mx-auto text-center">
         <h2 className="text-4xl font-bold text-center">Tech</h2>
-        <p>
+        <p className="mt-2 opacity-90">
           I focus on TypeScript and JavaScript development. I'm currently learning Go and have experience
           with the following:
         </p>
       </div>
-      <div className="flex justify-around flex-wrap max-w-2xl mx-auto">
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>JavaScript</p>
-          <FontAwesomeIcon icon={faJs} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>Java</p>
-          <FontAwesomeIcon icon={faJava} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>HTML5</p>
-          <FontAwesomeIcon icon={faHtml5} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>CSS3</p>
-          <FontAwesomeIcon icon={faCss3} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>React</p>
-          <FontAwesomeIcon icon={faReact} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>Node.js</p>
-          <FontAwesomeIcon icon={faNodeJs} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>Docker</p>
-          <FontAwesomeIcon icon={faDocker} size="5x" />
-        </div>
-        <div className="flex flex-col content-center text-center mx-5 mt-5 w-[100px]">
-          <p>Git</p>
-          <FontAwesomeIcon icon={faGit} size="5x" />
-        </div>
+      <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        {techs.map((tech) => (
+          <div
+            key={tech.name}
+            className="group rounded-xl bg-gradient-to-br from-[#164e63] to-[#4f46e5] p-[2px] transition-transform duration-300 hover:-translate-y-1"
+          >
+            <div className="flex flex-col items-center justify-center gap-3 h-full rounded-[calc(0.75rem-2px)] bg-[#0e1522] px-4 py-6 transition-colors duration-300 group-hover:bg-[#111827]">
+              <FontAwesomeIcon icon={tech.icon} size="3x" className="transition-transform duration-300 group-hover:scale-110" />
+              <p className="font-semibold">{tech.name}</p>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="flex-col justify-center content-center mx-auto text-center p-[16px] mt-5">
-        <p className="text-xl">
+      <div className="flex-col justify-center content-center mx-auto text-center mt-8">
+        <p className="text-xl opacity-90">
           And more!
         </p>
       </div>
-      
     </div>
   );
 };
