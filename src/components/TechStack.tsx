@@ -9,21 +9,49 @@ import {
   faDocker,
   faGit,
 } from "@fortawesome/free-brands-svg-icons";
+import { IconType } from "react-icons";
+import {
+  SiTypescript,
+  SiGo,
+  SiVite,
+  SiTailwindcss,
+  SiSqlite,
+  SiExpress,
+  SiGithubactions,
+} from "react-icons/si";
 
-const techs = [
-  { name: "JavaScript", icon: faJs },
-  { name: "Java", icon: faJava },
-  { name: "HTML5", icon: faHtml5 },
-  { name: "CSS3", icon: faCss3 },
-  { name: "React", icon: faReact },
-  { name: "Node.js", icon: faNodeJs },
-  { name: "Docker", icon: faDocker },
-  { name: "Git", icon: faGit },
+interface Tech {
+  name: string;
+  icon: React.ReactNode;
+}
+
+const faIcon = (icon: Parameters<typeof FontAwesomeIcon>[0]["icon"]) => (
+  <FontAwesomeIcon icon={icon} size="lg" />
+);
+
+const siIcon = (Icon: IconType) => <Icon size={22} />;
+
+const techs: Tech[] = [
+  { name: "TypeScript", icon: siIcon(SiTypescript) },
+  { name: "JavaScript", icon: faIcon(faJs) },
+  { name: "Java", icon: faIcon(faJava) },
+  { name: "Go", icon: siIcon(SiGo) },
+  { name: "HTML5", icon: faIcon(faHtml5) },
+  { name: "CSS3", icon: faIcon(faCss3) },
+  { name: "TailwindCSS", icon: siIcon(SiTailwindcss) },
+  { name: "React", icon: faIcon(faReact) },
+  { name: "Vite", icon: siIcon(SiVite) },
+  { name: "Node.js", icon: faIcon(faNodeJs) },
+  { name: "Express", icon: siIcon(SiExpress) },
+  { name: "SQLite", icon: siIcon(SiSqlite) },
+  { name: "Docker", icon: faIcon(faDocker) },
+  { name: "Git", icon: faIcon(faGit) },
+  { name: "GitHub Actions", icon: siIcon(SiGithubactions) },
 ];
 
 const TechStack: React.FC = () => {
   return (
-    <div id="tech" className="mt-20 max-w-4xl mx-auto p-[16px]">
+    <div id="tech" className="mt-20 max-w-3xl mx-auto p-[16px]">
       <div className="flex-col justify-center content-center mx-auto text-center">
         <h2 className="text-4xl font-bold text-center">Tech</h2>
         <p className="mt-2 opacity-90">
@@ -31,16 +59,14 @@ const TechStack: React.FC = () => {
           with the following:
         </p>
       </div>
-      <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="mt-8 flex flex-wrap justify-center gap-3">
         {techs.map((tech) => (
           <div
             key={tech.name}
-            className="group rounded-xl bg-gradient-to-br from-[#164e63] to-[#4f46e5] p-[2px] transition-transform duration-300 hover:-translate-y-1"
+            className="group flex items-center gap-2 rounded-full bg-[#0e1522] border border-white/10 px-4 py-2 transition-all duration-300 hover:border-transparent hover:bg-gradient-to-r hover:from-[#164e63] hover:to-[#4f46e5] hover:-translate-y-0.5"
           >
-            <div className="flex flex-col items-center justify-center gap-3 h-full rounded-[calc(0.75rem-2px)] bg-[#0e1522] px-4 py-6 transition-colors duration-300 group-hover:bg-[#111827]">
-              <FontAwesomeIcon icon={tech.icon} size="3x" className="transition-transform duration-300 group-hover:scale-110" />
-              <p className="font-semibold">{tech.name}</p>
-            </div>
+            <span className="transition-transform duration-300 group-hover:scale-110">{tech.icon}</span>
+            <span className="font-medium text-sm">{tech.name}</span>
           </div>
         ))}
       </div>
