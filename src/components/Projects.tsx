@@ -13,18 +13,18 @@ const Projects
         </p>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl lg:max-w-5xl mx-auto ">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl lg:max-w-5xl mx-auto items-stretch">
         {
           codingProjects.map((project, index) => (
             <div
               key={index}
-              className="mx-auto w-[320px] rounded-xl bg-gradient-to-br from-[#164e63] to-[#4f46e5] p-[2px] transition-transform duration-300 hover:-translate-y-1"
+              className="mx-auto w-[320px] h-full rounded-xl bg-gradient-to-br from-[#164e63] to-[#4f46e5] p-[2px] transition-transform duration-300 hover:-translate-y-1"
             >
-              <div className="card bg-[#0e1522] shadow-xl rounded-[calc(0.75rem-2px)] h-full overflow-hidden">
-                <figure className='h-40 object-cover overflow-hidden'><img className='object-cover h-[100%] w-[100%] transition-transform duration-300 hover:scale-105' src={project.thumbnailPath} alt={`Screenshot of ${project.name}`}/></figure>
-                <div className="card-body">
+              <div className="card bg-[#0e1522] shadow-xl rounded-[calc(0.75rem-2px)] h-full overflow-hidden flex flex-col">
+                <figure className='h-40 object-cover overflow-hidden shrink-0'><img className='object-cover h-[100%] w-[100%] transition-transform duration-300 hover:scale-105' src={project.thumbnailPath} alt={`Screenshot of ${project.name}`}/></figure>
+                <div className="card-body flex flex-col flex-1">
                   <h2 className="card-title">{project.name}</h2>
-                  <p className="opacity-90">{project.description}</p>
+                  <p className="opacity-90 flex-1">{project.description}</p>
                   <div  className="flex flex-wrap max-h-16 overflow-y-auto gap-2 mt-5 ">
                   {
                     project.technologies.map((tech, index) => (

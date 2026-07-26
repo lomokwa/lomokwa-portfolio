@@ -71,7 +71,6 @@ MC Manager doesn't just serve the web dashboard, either — its console and play
     repos: [
       { label: "Backend", url: "https://github.com/lomokwa/mc-manager-server" },
       { label: "Frontend", url: "https://github.com/lomokwa/mc-manager-client" },
-      { label: "Discord Bot Integration", url: "https://github.com/lomokwa/selton-mello-bot" },
     ],
     thumbnailPath: "/assets/pictures/project-thumbnails/mcmanager.png",
     featured: true,
@@ -124,7 +123,6 @@ It's self-hosted as a systemd service on the same homelab box as [MC Manager](/p
     ],
     repos: [
       { label: "Repo", url: "https://github.com/lomokwa/selton-mello-bot" },
-      { label: "MC Manager Integration", url: "https://github.com/lomokwa/mc-manager-server" },
     ],
     thumbnailPath: "/assets/pictures/project-thumbnails/seltonmello.png",
     featured: true,
