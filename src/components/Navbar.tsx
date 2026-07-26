@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { RESUME_URL } from "../utils/resume";
 
 export default function Navbar() {
   return (
@@ -15,7 +16,7 @@ export default function Navbar() {
               <li><a href="/#experience">Experience</a></li>
               <li><a href="/#projects">Projects</a></li>
               {/* <li><a href="#about">About</a></li> */}
-              <li><a href='/docs/mokwa-lorenzo-resume.pdf' rel='noopener noreferrer' target='_blank'>Resumé</a></li>
+              <li><a href={RESUME_URL} rel='noopener noreferrer' target='_blank'>Resumé</a></li>
               <li><a href="https://www.linkedin.com/in/lomokwa/" rel='noopener noreferrer' target='_blank'>LinkedIn</a></li>
             </ul>
           </div>

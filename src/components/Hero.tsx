@@ -4,6 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faNewspaper } from '@fortawesome/free-regular-svg-icons';
 import ModelViewer from './3dModel';
 import FeaturedProjects from './FeaturedProjects';
+import { RESUME_URL } from '../utils/resume';
 
 const Hero: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl font-bold">Hey, I&apos;m Lorenzo!</h1>
             <TypingDescription />
             <div className='flex flex-col sm:flex-row content-center sm:justify-center gap-2 md:block mx-auto w-48 sm:w-full'>
-              <a href='/docs/mokwa-lorenzo-resume.pdf' rel='noopener noreferrer' target='_blank' className="btn text-white md:mr-5 w-full mx-auto sm:w-[150px]"><FontAwesomeIcon size='2x' icon={faNewspaper} />Resumé</a>
+              <a href={RESUME_URL} rel='noopener noreferrer' target='_blank' className="btn text-white md:mr-5 w-full mx-auto sm:w-[150px]"><FontAwesomeIcon size='2x' icon={faNewspaper} />Resumé</a>
               <a href='https://www.linkedin.com/in/lomokwa/' rel='noopener noreferrer' target='_blank' className="btn text-white md:mr-5 w-full mx-auto sm:w-[150px]"><FontAwesomeIcon size='2x' icon={faLinkedin}/>LinkedIn</a>
               <a href='https://www.github.com/lomokwa' rel='noopener noreferrer' target='_blank' className='btn text-white w-full mx-auto sm:w-[150px]'><FontAwesomeIcon size='2x' icon={faGithub}/>Github</a>
             </div>
