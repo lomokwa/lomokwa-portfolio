@@ -11,34 +11,38 @@ const Projects: React.FC = () => {
         </p>
       </div>
 
-      <div className="mt-8 columns-1 sm:columns-2 lg:columns-3 gap-6 max-w-5xl mx-auto p-[16px]">
+      <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5 max-w-5xl mx-auto p-[16px]">
         {
           codingProjects.map((project) => (
-            <div key={project.slug} className="mb-6 break-inside-avoid group relative rounded-2xl overflow-hidden shadow-lg">
-              <img
-                className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                src={project.thumbnailPath}
-                alt={`Screenshot of ${project.name}`}
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-5">
-                <h2 className="text-xl font-bold">{project.name}</h2>
-                <p className="mt-1 text-sm opacity-90">{project.description}</p>
-                <div className="flex flex-wrap gap-1.5 mt-3">
+            <div
+              key={project.slug}
+              className="group flex flex-col rounded-2xl bg-[#111827] border border-white/5 overflow-hidden shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/10"
+            >
+              <div className="h-28 sm:h-32 overflow-hidden shrink-0">
+                <img
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  src={project.thumbnailPath}
+                  alt={`Screenshot of ${project.name}`}
+                />
+              </div>
+              <div className="flex flex-col flex-1 p-4 gap-2">
+                <h2 className="font-semibold text-sm sm:text-base leading-tight">{project.name}</h2>
+                <p className="text-xs opacity-75 flex-1 line-clamp-3">{project.description}</p>
+                <div className="flex flex-wrap gap-1 mt-1">
                   {
-                    project.technologies.map((tech, index) => (
-                      <div key={index} className="badge badge-outline badge-sm text-white/80 border-white/30">{tech}</div>
+                    project.technologies.slice(0, 3).map((tech, index) => (
+                      <div key={index} className="badge badge-outline badge-xs text-white/70 border-white/20 py-2">{tech}</div>
                     ))
                   }
                 </div>
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className="flex flex-wrap gap-1.5 mt-2">
                   {
                     project?.liveUrl &&
-                      <a href={project.liveUrl} rel='noreferrer noopener' target='_blank' className="btn btn-sm bg-[#6441a5] text-white hover:bg-[#47316e] border-none">Live</a>
+                      <a href={project.liveUrl} rel='noreferrer noopener' target='_blank' className="btn btn-xs bg-[#6441a5] text-white hover:bg-[#47316e] border-none">Live</a>
                   }
                   {
                     project?.repos?.map((repo, repoIndex) => (
-                      <a key={repoIndex} href={repo.url} rel='noreferrer noopener' target='_blank' className="btn btn-sm btn-outline text-white hover:bg-white/10 hover:border-white">{repo.label}</a>
+                      <a key={repoIndex} href={repo.url} rel='noreferrer noopener' target='_blank' className="btn btn-xs btn-outline text-white hover:bg-white/10 hover:border-white">{repo.label}</a>
                     ))
                   }
                 </div>
