@@ -93,7 +93,7 @@ const Timeline: React.FC = () => {
             <div className="timeline-middle">
               <TimelineIcon />
             </div>
-            <div className={`${entry.align === "start" ? "timeline-start md:text-end" : "timeline-end"} mb-10 md:mb-10 w-full max-w-md`}>
+            <div className={`${entry.align === "start" ? "timeline-start" : "timeline-end"} mb-10 md:mb-10 w-full max-w-md text-left`}>
               <TimelineCard entry={entry} />
             </div>
             {index < entries.length - 1 && <hr className="!bg-gradient-to-b !from-[#164e63] !to-[#4f46e5]" />}
