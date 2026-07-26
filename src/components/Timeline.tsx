@@ -75,12 +75,10 @@ const TimelineIcon: React.FC = () => (
 );
 
 const TimelineCard: React.FC<{ entry: TimelineEntry }> = ({ entry }) => (
-  <div className="rounded-xl bg-gradient-to-br from-[#164e63] to-[#4f46e5] p-[2px] transition-transform duration-300 hover:-translate-y-1">
-    <div className="rounded-[calc(0.75rem-2px)] bg-[#0e1522] px-5 py-4">
-      <time className="font-mono italic text-sm opacity-80">{entry.date}</time>
-      <div className="text-lg font-black mt-1">{entry.title}</div>
-      <p className="mt-2 opacity-90">{entry.description}</p>
-    </div>
+  <div className="rounded-xl bg-[#0e1522] px-5 py-4 transition-transform duration-300 hover:-translate-y-1">
+    <time className="font-mono italic text-sm opacity-80">{entry.date}</time>
+    <div className="text-lg font-black mt-1">{entry.title}</div>
+    <p className="mt-2 opacity-90">{entry.description}</p>
   </div>
 );
 
